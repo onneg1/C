@@ -1,3 +1,45 @@
+FEITO NO TRABALHO, OBSERVE QUE O FOR É CAPAZ DE CRIAR UMA VÁRIAVEL TAMBÉM, EU DECLAREI A VARIAVEL "i" COMO INTEIRO DENTRO DO FOR.
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    //declaração das variáveis
+    int n;
+    
+    //perguntando dados ao usuário
+    printf ("----------------- TABUADA ----------------\n\n");
+    printf ("Digite abaixo um número a ser multiplicado:\n");
+    scanf ("%d", &n);
+    
+    printf ("Tabuada do %d: \n", n);
+    
+    //para i de 1 ate 10 passo 1 faca
+    // caso seja para pular de 2 em 2 = (i += 2)
+    for (int i = 1; i <= 10; i++) {
+        printf ("%d x %d = %d\n", n, i, n*i);
+    }
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+                              FEITO EM SALA DE AULA \/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -8,11 +50,11 @@ int main () {
     int numero;
     int i;
      
-     printf ("Digite um n�mero para taboada.\n\n");
+     printf ("Digite um número para taboada.\n\n");
      scanf ("%i", &numero);
 
-    // 1 = � <- (recebe)
-    // 2 = � =
+    // 1 = é <- (recebe)
+    // 2 = é =
 
     //para i de 1 ate 10 passo 1 faca
     for (i = 1; i <= 10; i++) {
