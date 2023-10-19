@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+int main () {
+	
+	setlocale (LC_ALL, "portuguese");
+	
+	int i;
+	char resultado [200];
+	float nota;
+	float media;
+	float soma = 0;
+
+	
+	for (i = 1; i <= 3; i++){
+		do {
+			printf ("Digite uma nota: \n");
+			scanf ("%f", &nota);
+		} while (nota < 0 || nota > 10);
+	
+	soma += nota;
+}
+	media = soma / 3;
+		
+		if (media >= 7) {
+	   strcpy (resultado, "Aprovado!");
+		}else if (media > 5 && media <= 6.9){
+			strcpy (resultado, "Você está em recuperação!\n");
+		} else {
+			strcpy (resultado, "Você está reprovado!\n");
+		}
+	
+	printf ("\nMédia: %.2f\n", media);
+	printf ("Resultado: %s\n", resultado);
+	 return 0;
+}
