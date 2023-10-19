@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main () {
+	
+	
+	setlocale (LC_ALL, "portuguese");
+	int numero;
+	int soma = 0;
+	int contador = 0;
+	float media;
+	
+	 do {
+	 	printf ("Digite um número:\n");
+	 	scanf ("%d", &numero);
+	 	
+	 	if (numero > 0){
+	 		soma += numero;
+	 		contador ++;
+		}
+	 } while (numero > 0); // do > faça = geralmente pergunta
+	 						// while > enquanto = condição
+	 
+
+	 
+	 media = soma / contador;
+	 
+	printf ("Media: %.1f \n", media);
+	
+	 return 0;
+}
