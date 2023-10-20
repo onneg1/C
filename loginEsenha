@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+int main (){
+	setlocale (LC_ALL, "Portuguese");
+	
+	char login [250];
+	char senha [250];
+	char loginsalvo [250] = "ABC123";
+	char senhasalva [250] = "123456d";
+ 
+    do {
+    	printf ("Olá! Coloque o login para iniciar o programa:\n");
+    	gets (login);
+    	
+    	printf ("Digite agora sua senha para acesso:\n");
+    	gets (senha);
+		
+		if (strcmp (login, loginsalvo) != 0 && strcmp (senha, senhasalva) != 0)
+		{
+			printf ("Login e/ou senha inválidos!\n");
+		}
+	
+		else {
+		printf ("Bem vindo!\n");
+		}
+	}while (strcmp (login, loginsalvo) !=0 && strcmp (senha, senhasalva) != 0); 
+		
+	
+	return 0;
+}
