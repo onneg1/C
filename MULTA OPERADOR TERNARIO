@@ -1,0 +1,21 @@
+// Escreva um programa que pergunte a velocidade de um carro. Cao ultrapasse
+// 80Km/h, sexiba uma mensagem dizendo que o usuÃ¡rio foi multado. Nesse caso, exiba
+// o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
+
+// bibliotecas
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(void){
+    setlocale(LC_ALL, "Portuguese");
+    int velocidade;
+
+    printf ("Informe a velocidade do seu carro:\n");
+    scanf ("%d", &velocidade);
+
+    float multa = velocidade > 80 ? (velocidade - 80)*5 : 0;
+
+    multa >= 5 ? printf ("Sua multa é de:%.2f",multa) : printf ("Sem multas!");
+    return 0;
+}
